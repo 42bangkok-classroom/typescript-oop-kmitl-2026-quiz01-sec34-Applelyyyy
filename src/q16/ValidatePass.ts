@@ -11,14 +11,14 @@ if (User_lc9.length >= 8) {
         if (isNaN(Number(User_lc9[p])) && (User_lc9[p].toUpperCase() === User_lc9[p])){
             r = true
         }
-        if (User_lc9[p].toLowerCase() === User_lc9[p]){
+        if (isNaN(Number(User_lc9[p])) && (User_lc9[p].toLowerCase() === User_lc9[p])){
             t = true
         }
         else{
             s = true
         }
     }
-    if (r && s){
+    if (r && (s && t)){
         console.log("Valid")
     }
     else{
