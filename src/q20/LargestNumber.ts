@@ -8,8 +8,17 @@ let range_ = 0
 while(1){
     let User_lc7 = Number(process.argv[n]);
     let User_lc7_plus1 = Number(process.argv[o]);
-    if (User_lc7 === undefined || isNaN(User_lc7_plus1)) break;
 
+    if (User_lc7 === undefined || isNaN(User_lc7_plus1)) {
+        if (User_lc7 !== undefined && User_lc7_plus1 === undefined){
+            Largest = User_lc7
+            break
+        }
+        else{
+            Largest = User_lc7
+            break
+        }
+    };
     if ( User_lc7 >= User_lc7_plus1) {
         Largest = User_lc7
         o++
@@ -24,4 +33,4 @@ while(1){
     }
     range_ = 0
 }
-console.log(`${Largest}`)
+console.log(Largest.toString())
