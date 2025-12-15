@@ -1,18 +1,25 @@
 
 
 
-const pattern3 = Number(process.argv[2])
 
-let pattern_4 = ''
-for (let z = 1; z <= pattern3; z++ ){
-  for ( let x = 1; x <= pattern3; x++){
-    if ( x % 2 === 0){
-      pattern_4 += '1'
-    }
-    else{
-      pattern_4 += '0'
+
+
+
+
+
+const pattern2 = Number(process.argv[2])
+let pattern_3 = ''
+for (let a = 1 ; a<= pattern2; a++){
+  if (a % 2 === 0 ){
+    for (let s = 1; s <= pattern2; s++){
+      pattern_3 += '0'
     }
   }
-  pattern_4 += '\n'
-}
-console.log(pattern_4)
+  else{
+      for (let f = 1; f <= pattern2; f++){
+        pattern_3 += '1'
+    }
+  }
+  pattern_3 += '\n'
+  }
+console.log(pattern_3)

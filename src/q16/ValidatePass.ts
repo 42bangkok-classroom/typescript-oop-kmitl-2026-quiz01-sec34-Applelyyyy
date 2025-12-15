@@ -7,7 +7,7 @@ if (User_lc9.length >= 8) {
         if(User_lc9[p] === undefined){
             break
         }
-        if (isNaN(Number(User_lc9[p])) && (User_lc9[p].toUpperCase() === User_lc9[p])){
+        if (isNaN(Number(User_lc9[p])) && (User_lc9[p].toUpperCase() === User_lc9[p]) && (User_lc9[p] === User_lc9[p].toLowerCase())){
             r = true
         }
         else{

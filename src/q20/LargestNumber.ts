@@ -24,4 +24,4 @@ while(1){
     }
     range_ = 0
 }
-console.log(`Largest: ${Largest}`)
+console.log(`${Largest}`)
